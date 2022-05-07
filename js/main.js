@@ -9,16 +9,21 @@ function getRandColor(colors) {
 const gridContainer = document.querySelector("#grid-container");
 const reset = document.querySelector("#reset");
 const color = document.querySelector("#color");
+const colorPicker = document.querySelector("#colorselector")
+let pickedColor = '#000000'
+
+colorPicker.value = '#ffffff'
+
 
 for (let i = 0; i < 16 ** 2; i++) {
   const square = document.createElement("div");
 
   square.addEventListener("mouseover", () => {
     square.classList.remove("white");         
-    square.classList.add("black");  // or add a global color value that can be picked and switched 
+    square.style.backgroundColor = pickedColor  // or add a global color value that can be picked and switched 
   });
 
-  square.classList.add("white");    
+  square.style.backgroundColor = "#ffffff"
   square.classList.add("square"); 
   gridContainer.appendChild(square);
 }
@@ -26,8 +31,13 @@ for (let i = 0; i < 16 ** 2; i++) {
 const SQAURES = gridContainer.querySelectorAll(".square");
 
 reset.addEventListener("click", () => {
-  SQAURES.forEach((sqaure) => {
-    sqaure.classList.remove("black");
-    sqaure.classList.add("white");
+  SQAURES.forEach((sqaure) => {;
+    sqaure.style.backgroundColor = '#ffffff'
   });
 });
+
+colorPicker.addEventListener('input', () => {
+    pickedColor = colorPicker.value
+    console.log(pickedColor)
+
+})
