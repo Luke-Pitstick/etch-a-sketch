@@ -1,29 +1,33 @@
-const gridContainer = document.querySelector("#grid-container")
-const reset = document.querySelector("#reset")
-const color = document.querySelector("#color")
-
-
-for (let i = 0; i < 16 ** 2; i++) {
-    const square = document.createElement('div')
-
-    square.addEventListener('mouseover', () => {
-        square.classList.remove('white')
-        square.classList.add('black')
-
-    })
-
-    square.classList.add('white')
-    square.classList.add('square')
-    gridContainer.appendChild(square)
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
-const squares = gridContainer.querySelectorAll('.square')
+function getRandColor(colors) {
+  return colors[getRndInteger(0, colors.length)];
+}
 
-reset.addEventListener('click', () => {
-    squares.forEach(sqaure => {
-        sqaure.classList.remove('black')
-        sqaure.classList.add('white')
-    })
-        
+const gridContainer = document.querySelector("#grid-container");
+const reset = document.querySelector("#reset");
+const color = document.querySelector("#color");
 
-})
+for (let i = 0; i < 16 ** 2; i++) {
+  const square = document.createElement("div");
+
+  square.addEventListener("mouseover", () => {
+    square.classList.remove("white");
+    square.classList.add("black");
+  });
+
+  square.classList.add("white");
+  square.classList.add("square");
+  gridContainer.appendChild(square);
+}
+
+const SQAURES = gridContainer.querySelectorAll(".square");
+
+reset.addEventListener("click", () => {
+  SQAURES.forEach((sqaure) => {
+    sqaure.classList.remove("black");
+    sqaure.classList.add("white");
+  });
+});
