@@ -14,12 +14,12 @@ for (let i = 0; i < 16 ** 2; i++) {
   const square = document.createElement("div");
 
   square.addEventListener("mouseover", () => {
-    square.classList.remove("white");
-    square.classList.add("black");
+    square.classList.remove("white");         
+    square.classList.add("black");  // or add a global color value that can be picked and switched 
   });
 
-  square.classList.add("white");
-  square.classList.add("square");
+  square.classList.add("white");    
+  square.classList.add("square"); 
   gridContainer.appendChild(square);
 }
 
