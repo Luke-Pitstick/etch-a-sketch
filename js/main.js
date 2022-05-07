@@ -17,10 +17,9 @@ for (let i = 0; i < 16 ** 2; i++) {
     gridContainer.appendChild(square)
 }
 
-
+const squares = gridContainer.querySelectorAll('.square')
 
 reset.addEventListener('click', () => {
-    const squares = gridContainer.querySelectorAll('.square')
     squares.forEach(sqaure => {
         sqaure.classList.remove('black')
         sqaure.classList.add('white')
