@@ -122,3 +122,13 @@ html {
     color: white;
     font-size: 20px;
 }
+
+
+.github {
+    transition: all .5s ease-in-out;
+}
+
+.github:hover {
+    transform: rotate(-1turn) scale(1.1);
+    transition: all .5s ease-in-out;
+}
