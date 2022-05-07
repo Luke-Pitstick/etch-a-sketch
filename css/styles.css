@@ -1,3 +1,32 @@
 * {
-    font-family: "Roboto", sans-serif;;
+  font-family: "Roboto", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: rgb(57, 57, 176);
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(16, 0fr);
+  position: relative;
+  top: 50%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.white {
+  background-color: white;
+}
+
+.square {
+  border: 1px solid black;
+  width: 4vh;
+  height: 4vh;
 }
