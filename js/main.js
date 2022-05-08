@@ -18,9 +18,9 @@ colorPicker.value = '#ffffff'
 for (let i = 0; i < 16 ** 2; i++) {
   const square = document.createElement("div");
 
-  square.addEventListener("mouseover", () => {
+  square.addEventListener("click", () => {
     square.classList.remove("white");         
-    square.style.backgroundColor = pickedColor  // or add a global color value that can be picked and switched 
+    square.style.backgroundColor = pickedColor  
   });
 
   square.style.backgroundColor = "#ffffff"
@@ -38,6 +38,5 @@ reset.addEventListener("click", () => {
 
 colorPicker.addEventListener('input', () => {
     pickedColor = colorPicker.value
-    console.log(pickedColor)
 
 })
