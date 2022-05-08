@@ -10,6 +10,13 @@ html {
   background-color: #0e3b43;
 }
 
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+
+
 #grid-container {
   display: grid;
   grid-template-columns: repeat(16, 0fr);
@@ -25,7 +32,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 50vh;
-  margin-top: 25vh;
+  margin-top: 20vh;
   z-index: 0;
 }
 
@@ -75,7 +82,7 @@ html {
 .buttons {
   display: flex;
   flex-direction: row;
-  margin-top: 3vh;
+  margin-bottom: 3vh;
   justify-content: space-evenly;
   align-items: center;
   gap: 5vw;
@@ -118,10 +125,10 @@ html {
 
 
 .footer {
-    margin-top: 40px;
+    margin-top: 5vh;
     color: white;
     font-size: 20px;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
 }
 
 

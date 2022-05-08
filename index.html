@@ -7,26 +7,38 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Sketchpad</title>
   </head>
   <body>
-    <div class="header">
-      <h1>Luke's Sketchpad</h1>
-    </div>
-
-    <div class="container">
-      <div id="grid-container"></div>
-      <div class="buttons">
-        <button id="reset">Reset</button>
-        <div class="color_picker">
-          <div class="text">Pick Color:</div>
-          <input type="color" id="colorselector" />
-        </div>
+    <div class="page-container">
+      <div class="header">
+        <h1>Luke's Sketchpad</h1>
       </div>
-      <div class="footer">Created by Luke Pitstick <a href="https://github.com/Luke-Pitstick"><i class="fa fa-github github" style="font-size: 24px; color: white;"></i></a></div>
-      
+      <div class="container">
+        <div class="buttons">
+          <button id="reset">Reset</button>
+          <div class="color_picker">
+            <div class="text">Pick Color:</div>
+            <input type="color" id="colorselector" />
+          </div>
+        </div>
+        <div id="grid-container"></div>
+        <footer class="footer">
+          Created by Luke Pitstick
+          <a href="https://github.com/Luke-Pitstick"
+            ><i
+              class="fa fa-github github"
+              style="font-size: 24px; color: white"
+            ></i
+          ></a>
+        </footer>
+      </div>
     </div>
 
     <script type="text/javascript" src="js/main.js"></script>
