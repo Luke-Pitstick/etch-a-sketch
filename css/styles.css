@@ -25,7 +25,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 50vh;
-  margin-top: 20vh;
+  margin-top: 25vh;
   z-index: 0;
 }
 
@@ -35,8 +35,8 @@ html {
 
 .square {
   border: 1px solid black;
-  width: 4vh;
-  height: 4vh;
+  width: 3.5vh;
+  height: 3.5vh;
   transition: all .05s ease-in-out;
 }
 
@@ -121,6 +121,7 @@ html {
     margin-top: 40px;
     color: white;
     font-size: 20px;
+    margin-bottom: 2vh;
 }
 
 
